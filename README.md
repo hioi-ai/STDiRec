@@ -1,4 +1,8 @@
+# STDiRec
+## Introduction
+Introduction
 STDiRec is a sequential recommendation framework that integrates coarse-grained user interests and fine-grained directional transition patterns through a dual-path diffusion architecture.
+## Project Structure
 ```
 STDiRec/
 ├── datasets/           # Dataset files
@@ -13,13 +17,16 @@ STDiRec/
 ├── trainer.py          # Training and evaluation
 └── utils.py            # Utility functions
 ```
+## Datasets
 Experiments are conducted on the following Amazon datasets:
 - Beauty
 - Sports and Outdoors
 - Toys and Games
+## Training
 Training scripts are provided in the scripts/ directory.
 For example:
 ```
 bash scripts/beauty.sh
 ```
+## Code Availability
 The implementation of STDiRec is available in this repository. Additional documentation will be updated progressively.
