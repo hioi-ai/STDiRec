@@ -1,0 +1,26 @@
+CUDA_VISIBLE_DEVICES=1 python main.py \
+  --data_name Beauty \
+  --model_idx 3 \
+  --cuda 1 \
+  --batch_size 256 \
+  --epochs 70 \
+  --max_seq_length 50 \
+  --hidden_size 64 \
+  --num_hidden_layers 2 \
+  --num_attention_heads 2 \
+  --attention_probs_dropout_prob 0.5 \
+  --hidden_dropout_prob 0.5 \
+  --lr 0.001 \
+  --diff_weight 0.1 \
+  --cl_weight 0.1 \
+  --mse_weight 0.1 \
+  --ortho_weight 0.1 \
+  --timesteps 100 \
+  --w 1.5 \
+  --min_sample 2 \
+  --quality_threshold 0.4 \
+  --diff_meta_rank 4 \
+  --cluster_save_path ../granular_balls_beautyq2.pkl \
+  --cooccur_matrix_save_path ../coo/beauty_directed_diff.pkl \
+  --llm_user_pkl  ../coLLM/LLM_co_em/beauty_sasllm.pkl
+  
